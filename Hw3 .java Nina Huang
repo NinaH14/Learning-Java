@@ -1,4 +1,4 @@
-import java.util.Scanner;
+mport java.util.Scanner;
 
 public class DecisionMaking {
     public static void main(String[] args) {
@@ -76,6 +76,26 @@ public class DecisionMaking {
             return;
         }
 
+        else if (choice3 == 2) {
+    System.out.println("You hide behind a leaf.");
+    System.out.println("The old lady stomps around but eventually gives up and leaves.");
+}
+else if (choice3 == 3) {
+    System.out.println("You stand completely still…");
+    System.out.println("The old lady slowly turns toward you.");
+    System.out.println("\"Huh? Is that a cockroach just… watching me?\"");
+    System.out.println("Her shadow grows larger as her shoe rises into the air.");
+    System.out.println("You suddenly regret EVERYTHING.");
+    System.out.println("SPLAT.");
+    System.out.println("You have died. Game over.");
+    return;
+}
+else {
+    System.out.println("You hesitate. The world flickers like a broken TV.");
+    System.out.println("The dream collapses. Everything turns white.");
+    System.out.println("Game over.");
+    return;
+}
         System.out.println("\nA roach wearing a tiny candy-wrapper cape appears.");
         System.out.println("\"You are the chosen one. Only YOU can defeat the Old Lady Witch.\"");
         System.out.println("Do you accept your destiny?");
@@ -87,14 +107,16 @@ public class DecisionMaking {
 
         if (choice4 == 1) {
             System.out.println("You receive a heroic toothpick sword!");
-        } else if (choice4 == 2) {
+             System.out.println("Boosted with ego you flew to the whitch");
+              System.out.println("Before yoru realized you");
+        } 
+        else if (choice4 == 2) {
             System.out.println("The roach leaves sadly. Game over.");
-            return;
         }
 
         // WAKING UP
         System.out.println("You wake up gasping. It's morning.");
-        System.out.println("You rush to school and take your test.");
+        System.out.println("You rush to school and realized today is your finals day.");
         System.out.println("When the scores come out...");
 
         
@@ -113,3 +135,4 @@ public class DecisionMaking {
         in.close();
     }
 }
+

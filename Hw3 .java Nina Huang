@@ -1,6 +1,6 @@
-Import java.util.Scanner;
+import java.util.Scanner;
 
-public class DecisionMaking {
+public class decisionnimaking {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -69,13 +69,8 @@ public class DecisionMaking {
 
         if (choice3 == 1) {
             System.out.println("You are sucked into a glowing vortex!");
-        } else if (choice3 == 2) {
-            System.out.println("The old lady stomps around but eventually leaves.");
-        } else {
-            System.out.println("Dream collapses. Game over.");
-            return;
-        }
-
+        } 
+        
         else if (choice3 == 2) {
     System.out.println("You hide behind a leaf.");
     System.out.println("The old lady stomps around but eventually gives up and leaves.");
@@ -108,10 +103,11 @@ else {
         if (choice4 == 1) {
             System.out.println("You receive a heroic toothpick sword!");
              System.out.println("Boosted with ego you flew to the whitch");
-              System.out.println("Before yoru realized you");
+              System.out.println("Before you realized, you.. ");
         } 
         else if (choice4 == 2) {
             System.out.println("The roach leaves sadly. Game over.");
+            return;
         }
 
         // WAKING UP
@@ -121,7 +117,7 @@ else {
 
         
         if (choice1 == 2 || choice1 == 3) {
-            System.out.println("\nYou get a big fat ZERO. L + Ratio. But you still survive.");
+            System.out.println("\nYou get a big fat ZERO. But you still survive.");
         } 
         else if (choice1 == 1 || choice1 == 5) {
             System.out.println("\nYou get a 100! YOU WIN!");

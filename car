@@ -1,41 +1,48 @@
-public class Car {
+import java.util.Scanner;
 
-public Car (String model, String brand, int mileage ) {
+public class Car {
 public String model;
 public String brand;
 public int mileage;
+public Car (String model, String brand, int mileage ) {
+
 this.model = model;   
 this.brand = brand;
 this.mileage = mileage;
 }
     public void displayInfo() {
-System.out.println( +model+ " "  +brand+)
+System.out.println(  model+ " "  + brand);
     }
 
-public static drive(int mile) {
+public void drive(int mile) {
     if (mile > 0 ) {
 this.mileage = mile + mileage; 
 }
-}
+
  return;
 
+}
 
 public static void main(String[] args) {
    
-    Scannerin = new Scanner(System.in);
-System.out.println( " Enter car model")
+    Scanner in = new Scanner(System.in);
+System.out.println( " Enter car model:");
   String model = in.nextLine();
        
-System.out.println ("Enter car brand")
-String brand = in.nextInt();
+System.out.println ("Enter car brand:");
+String brand = in.nextLine();
 
-milage = 100
-mile= 50
-result= this.milage
 
-Car myCar = new Car(model, brand, milage);
+int initialmilage = 100;
+int mile= 50;
 
-        System.out.println("car infomation:" +String brand+ " " +String model+ " " +result+ "!");
+
+
+Car myCar = new Car(model, brand,  initialmilage);
+myCar.drive(50);
+int result = myCar.mileage;
+
+        System.out.println("car infomation:" + brand+ " " + model+ " " + result + "!");
         
 
 }
